@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1>Shop</h1>
+                <p>
+                    Username: {{ current_user.username }}
+                </p>
+            </div>
+        </div>
+        <div class="row homes">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/home1.jpg') }}" alt="home1">
+                <p>𝖁𝖎𝖈𝖙𝖔𝖗𝖎𝖆'𝖘 𝕽𝖎𝖉𝖌𝖊</p>
+                <p>$3,000,000</p>
+                <button type="button" class="btn btn-warning">Speak with Real Estate Agent</button>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/home2.jpg') }}" alt="home2">
+                <p>𝕮𝖗𝖊𝖘𝖈𝖊𝖓𝖙 𝕱𝖆𝖑𝖑𝖘</p>
+                <p>$2,500,000</p>
+                <button type="button" class="btn btn-warning">Speak with Real Estate Agent</button>
+            </div>
+        </div>
+        <div class="row homes">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/home3.jpg') }}" alt="home3">
+                <p>𝕭𝖊𝖆𝖈𝖍 𝕰𝖉𝖌𝖊</p>
+                <p>$200,000,000</p>
+                <button type="button" class="btn btn-warning">Speak with Real Estate Agent</button>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/home4.jpg') }}" alt="home4">
+                <p>𝕱𝖔𝖗𝖊𝖘𝖙 𝕯𝖆𝖜𝖓</p>
+                <p>$1,500,000</p>
+                <button type="button" class="btn btn-warning">Speak with Real Estate Agent</button>
+            </div>
+        </div>
+{% endblock %}

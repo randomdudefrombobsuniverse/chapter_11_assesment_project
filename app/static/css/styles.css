@@ -1,0 +1,11 @@
+.homes img, .profile img {
+    width: 400px;
+    length: 300px;
+    border-radius: 25px;
+}
+.index img {
+    width: 200px;
+    length: 100px;
+    border-radius: 20px;
+    padding: 10px;
+}
